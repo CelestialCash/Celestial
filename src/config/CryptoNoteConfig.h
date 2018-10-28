@@ -72,7 +72,7 @@ const uint64_t MAXIMUM_MIXIN_V1                              = 100;
 const uint64_t MINIMUM_MIXIN_V2                              = 1;
 const uint64_t MAXIMUM_MIXIN_V2                              = 7;
 
-const uint64_t MINIMUM_MIXIN_V3                              = 1;
+const uint64_t MINIMUM_MIXIN_V3                              = 0;
 const uint64_t MAXIMUM_MIXIN_V3                              = 3;
 
 /* The heights to activate the mixin limits at */
@@ -149,11 +149,12 @@ const uint64_t FORK_HEIGHTS[] =
     1600,  // 5
     3000,  // 6
     3160,  // 7
-    3300   // 8
+    3300,  // 8
+    6700   // 9 - Set default mixin to zero.
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 8;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 9;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
