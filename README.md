@@ -11,7 +11,7 @@ A cryptocurrency that uses an improved proof of work algorithm to create a stabl
 
 ##### Building
 
-- `git clone https://github.com/CelestialCash/testnet2`
+- `git clone https://github.com/CelestialCash/Celestial`
 - `cd Celestial`
 - `mkdir build && cd $_`
 - `cmake ..`
@@ -27,7 +27,7 @@ A cryptocurrency that uses an improved proof of work algorithm to create a stabl
 
 ##### Building
 
-- `git clone https://github.com/CelestialCash/testnet2`
+- `git clone https://github.com/CelestialCash/Celestial`
 - `cd Celestial`
 - `mkdir build && cd $_`
 - `cmake ..` or `cmake -DBOOST_ROOT=<path_to_boost_install> ..` when building
