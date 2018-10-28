@@ -149,11 +149,12 @@ const uint64_t FORK_HEIGHTS[] =
     1600,  // 5
     3000,  // 6
     3160,  // 7
-    3300   // 8
+    3300,  // 8
+    6700   // 9 - Completely deleted mixins.
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 8;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 9;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
