@@ -150,7 +150,7 @@ const uint64_t FORK_HEIGHTS[] =
     3000,  // 6
     3160,  // 7
     3300,  // 8
-    6700   // 9 - Completely deleted mixins.
+    6700   // 9 - Set default mixin to zero.
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
