@@ -151,11 +151,12 @@ const uint64_t FORK_HEIGHTS[] =
     3160,  // 7
     3300,  // 8
     6700,  // 9 - Set default mixin to zero.
-    8325   // 10 - Fork at block 8325 to fix infinite syncing and timestamp errors.
+    8325,  // 10 - Fork at block 8325 to fix infinite syncing and timestamp errors.
+    8400   // 11 - Fork at block 8400 daemons pushing bad blocks fix.
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 10;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 11;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
