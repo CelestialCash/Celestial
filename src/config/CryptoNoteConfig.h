@@ -232,7 +232,8 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-  "198.245.53.229:17236",
-  "198.245.53.230:17236"
+  "198.245.53.229:17236", // Canada
+  "198.245.53.230:17236", // Canada
+  "178.62.7.43:17236"     // London
 };
 } // CryptoNote
