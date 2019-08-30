@@ -52,7 +52,7 @@ static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) !
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
    You can get this value by doing "print_block 2" in Celestiald. It is used to know what timestamp
    to import from when the block height cannot be found in the node or the node is offline. */
-const uint64_t GENESIS_BLOCK_TIMESTAMP                       = 1540438698;
+const uint64_t GENESIS_BLOCK_TIMESTAMP                       = 1540438683;
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; //size of block (bytes) after which reward for block calculated using block size
@@ -150,13 +150,11 @@ const uint64_t FORK_HEIGHTS[] =
     3000,  // 6
     3160,  // 7
     3300,  // 8
-    6700,  // 9 - Set default mixin to zero.
-    8325,  // 10 - Fork at block 8325 to fix infinite syncing and timestamp errors.
-    8400   // 11 - Fork at block 8400 daemons pushing bad blocks fix.
+    6700   // 9 - Set default mixin to zero.
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 11;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 9;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -232,8 +230,7 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-  "198.245.53.229:17236", // Canada
-  "198.245.53.230:17236", // Canada
-  "178.62.7.43:17236"     // London
+  "198.245.53.229:17236",
+  "198.245.53.230:17236"
 };
 } // CryptoNote
